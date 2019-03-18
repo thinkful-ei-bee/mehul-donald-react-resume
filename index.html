@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>React Hello World</title>
+</head>
+<body>
+    <div id="application-root"></div>
+
+    <script
+      src="https://unpkg.com/react@16/umd/react.development.js">
+    </script>
+    <script
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js">
+    </script>
+    <script
+    src="https://unpkg.com/babel-standalone@6/babel.min.js"
+    crossorigin>
+  </script>
+<script type="text/babel">
+function App(props) {
+  return (
+    <main role= "main">
+     <section role= "region">
+        <header role="banner">
+            <h1>Sally Student's Resume</h1>
+        </header>
+        <h2>Employment History</h2>
+        <p>Vetlife Insurance                                                                       May 2014 - Aug 2014</p>
+        <i>Intern</i>
+        <ul>
+                <li>Performed Defect Analysis for the companies phone application</li>
+                <li>Peformed Project Management tasks</li>
+                <li>Developed small Java applications</li>
+        </ul>
+
+        <p>Consultants-R-Us                                                                     Sept 2015 - Present</p>
+        <i>Senior Consultant</i>
+        <ul>
+                <li>Developed Strategtic Roadmap for AI Technology</li>
+                <li>Led over 30 Client Meetings</li>
+                <li>Developed sales decks for potential clients </li>
+        </ul>
+    </section>
+    <section>
+        <h2>Education</h2>
+        <p> Bachelors of Science - Computer Science</p>
+        <p> Rutgers University Class of 2015</p>
+    </section>
+    <section>
+        <h2>Contact Info</h2>
+        <address>
+            <ul>
+            <li>Name: Sally Student</li>
+            <li> <a href="mailto:sallystudent@student.com">Send an email to me, Sally Student</a></li>
+            <li>Phone Number: 755-943-4952</li>
+            </ul>
+        </address>
+            <p><img src="test.jpg" alt="A picture of me, Sally Student"/></p>
+    </section>
+    </main>
+
+  );
+}
+
+// Nested elements inside the App!
+ReactDOM.render( <App></App>, document.querySelector('#application-root')
+);
+  </script>
+</body>
+</html>
